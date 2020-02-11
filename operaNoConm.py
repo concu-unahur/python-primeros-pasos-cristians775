@@ -12,7 +12,7 @@ def addOne():
     lock.acquire()
     logging.info(f'num vale = {num}')
     logging.info('Sumando uno')
-    num+=1
+    num+= 1
     logging.info(f'num vale = {num}')
     lock.release()
 
@@ -21,7 +21,7 @@ def addThree():
     lock.acquire()
     logging.info(f'num vale = {num}')
     logging.info('Sumando 3')
-    num+=3
+    num+= 3
     logging.info(f'num vale = {num}')
     lock.release()
 
@@ -29,8 +29,8 @@ def divideTwo():
     global num
     lock.acquire()
     logging.info(f'num vale = {num}')
-    logging.info('Multiplicando por dos')
-    num/=2
+    logging.info('Dividiendo por dos')
+    num /= 2
     logging.info(f'num vale = {num}')
     lock.release()
 

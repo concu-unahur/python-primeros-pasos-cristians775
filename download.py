@@ -41,7 +41,8 @@ tiempo.iniciar()
 
 # una por una
 for url in img_urls:
-    bajar_imagen(url)
+    threading.Thread(target=bajar_imagen(url)).start()
+    
 
 tiempo.finalizar()
 tiempo.imprimir()
